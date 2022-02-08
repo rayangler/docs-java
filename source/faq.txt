@@ -16,6 +16,40 @@ General
 Why are there two types of ``MongoClient`` in the Java driver? 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. io-code-block::
+   :caption: Input has content and argument
+
+   .. input:: /includes/fundamentals/code-snippets/LegacyAPI.java
+      :language: java
+      :linenos:
+
+      Hello
+      this
+      is my
+      content
+   
+   .. output::
+
+      Code output
+      HERE
+
+.. io-code-block::
+   :caption: Input and content are switched
+
+   .. output::
+
+      Code output
+      HERE
+
+   .. input::
+      :language: java
+      :linenos:
+
+      Hello
+      this
+      is my
+      content
+
 There are two types of ``MongoClient`` because we wanted a cleaner API
 for new users that didn't have the confusion of including multiple CRUD
 APIs. We wanted to ensure that the new CRUD API was available in a Java
